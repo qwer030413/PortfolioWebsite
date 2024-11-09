@@ -1,0 +1,18 @@
+
+.Welcome{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0rem;
+}
+.Options{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 50px;
+}
+.WelcomeText{
+    font-size: 50px;
+    font-weight: 500;
+}
