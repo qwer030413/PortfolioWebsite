@@ -1,30 +1,43 @@
 
 
 .AboutMe{
-    width: 100%;
-    height: 100vh;
+    width: 75%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     gap:5rem;
+    background-color: rgb(204, 255, 52);
+    border-radius: 30px;
+    padding: 30px;
 }
 h1{
     font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: bold;
+    /* width: 100%; */
+    text-align: start;
 }
 
 .AboutContainer{
     display: flex;
     flex-direction: row;
     min-width: 100%;
-    height: 80vh;
+    height: 100%;
     align-items: start;
-    gap:5rem;
-    justify-content: center;
+    justify-content: space-around;
 
 }
+.AboutHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    justify-content: start;
+}
 .Picture{
-    width: 500px;
+    width: 350px;
     height: 500px;
-    background-color: aliceblue;
+    object-fit: cover;
 }
 .Description{
     align-items: start;
@@ -34,9 +47,10 @@ h1{
     display: flex;
     flex-direction: column;
     gap:2rem;
+    color: black;
 
 }
 .descriptionText{
-    font-size: 35px;
+    font-size: 30px;
     text-align: start;
 }

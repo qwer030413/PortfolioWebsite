@@ -1,14 +1,17 @@
 import "./Aboutme.css"
-
-function AboutMe() {
+import { GrInfo } from "react-icons/gr";
+import selfie from '../../Images/profilepicture.jpg';
+function AboutMe(props:any) {
 
   return (
     <>
-      <div className='AboutMe'>
-        <h1>About Me</h1>
+      <div className='AboutMe' ref = {props.Propref}>
+        <div className="AboutHeader">
+          <h1>About Me</h1>
+          <GrInfo size={45} color="black"/>
+        </div>
         <div className="AboutContainer">
-            <div className="Picture">
-            </div>
+            <img className="Picture" src={selfie} />
             <div className="Description">
                 <text className="descriptionText">
                     Hi! My name is Seojin Park, but you can call me Chris. I am a software Engineer who loves to code in their free time, and I am eager to learn new things
