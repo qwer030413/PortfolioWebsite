@@ -1,18 +1,25 @@
 
 .Welcome{
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 0rem;
+    height: 100vh;
+    width: 50%;
+
 }
 .Options{
     display: flex;
     flex-direction: row;
     gap: 2rem;
     margin-top: 50px;
+    width: 100%;
 }
 .WelcomeText{
     font-size: 50px;
     font-weight: 500;
+    width: 100%;
+    display: flex;
+    align-items: start;
 }
