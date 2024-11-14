@@ -5,17 +5,20 @@
     height: 80vh;
     display: flex;
     flex-direction: column;
-    gap:5rem;
+    gap:1rem;
     background-color: rgb(204, 255, 52);
     border-radius: 30px;
-    padding: 30px;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 h1{
     font-family: "Poppins", sans-serif;
     color: black;
-    font-weight: bold;
-    /* width: 100%; */
+    font-weight: 100;
     text-align: start;
+    font-size: 60px;
+    
 }
 
 .AboutContainer{
@@ -23,8 +26,8 @@ h1{
     flex-direction: row;
     min-width: 100%;
     height: 100%;
-    align-items: start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .AboutHeader{
@@ -41,7 +44,7 @@ h1{
 }
 .Description{
     align-items: start;
-    justify-content: start;
+    justify-content: center;
     height: 100%;
     width: 800px;
     display: flex;
@@ -53,4 +56,16 @@ h1{
 .descriptionText{
     font-size: 30px;
     text-align: start;
+}
+.Line{
+    width: 5px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+}
+.horLine{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
 }

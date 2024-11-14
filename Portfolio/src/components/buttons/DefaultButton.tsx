@@ -1,8 +1,6 @@
-import { useRef } from 'react';
 import './buttons.css'
 import {motion} from "framer-motion";
 function DefaultButton(props: any) {
-  const test = useRef(null);
   return (
     
       <motion.button
