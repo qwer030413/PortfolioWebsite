@@ -10,7 +10,7 @@ function AboutMe(props:any) {
           <h1>About Me</h1>
           {/* <Anitext  text = "About Me" class = "header"/> */}
           <div className="Line"></div>
-          <HiLightBulb size={55} color="black"/>
+          <HiLightBulb size={55} color="white"/>
         </div>
         <div className="horLine"/>
         <div className="AboutContainer">
