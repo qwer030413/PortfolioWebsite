@@ -17,10 +17,10 @@ function AboutMe(props:any) {
             <img className="Picture" src={selfie} />
             <div className="Description">
                 <text className="descriptionText">
-                    Hi! My name is Seojin Park, but you can call me Chris. I am a software Engineer who loves to code in their free time, and I am eager to learn new things
+                    Hi! My name is Seojin Park, but you can call me Chris. I am a Junior in UC San Diego studying computer science, and I am actively looking for internships!
                 </text>
                 <text className="descriptionText">
-                    I am proficient in Java, Python, C++/C, Assembly MIPS, CSS, HTML, JavaScript, TypeScipt, Node.js, mySQL, Express.js and React.js/React Native
+                    I am eager to learn new things and I am blah blah blah
                 </text>
                 <text className="descriptionText">
                     In my free time, I love to play chess, video games, go hiking, and go rock climb with my friends
