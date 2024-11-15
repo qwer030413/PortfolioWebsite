@@ -1,15 +1,20 @@
 import './buttons.css'
 import {motion} from "framer-motion";
+
+
 function DefaultButton(props: any) {
   return (
-    
+    // <a href={props.link} target="_blank">
       <motion.button
       className={`DButton ${props.color}`}
-      onClick={() => {props.PropRef.current?.scrollIntoView({behavior: 'smooth'})}}
       whileHover = {{y:-10}}
+      
       >
+        {props.icon}
         <text className='DButtonText'>{props.text}</text>
-      </motion.button>
+      </motion.button>    
+    /* </a> */
+
         
   )
 }

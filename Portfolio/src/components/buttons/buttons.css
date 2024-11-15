@@ -1,36 +1,41 @@
 
 
 .DButton{
-    width: 130px;
-    height: 50px;
+    /* width: 250px; */
+    height: 45px;
     align-items: center;
     justify-content: center;
     display: flex;
     border-radius: 10px;
     padding-left: 1rem;
     padding-right: 1rem;
-    /* box-shadow: 0px 25px 45px -15px rgb(123, 255, 86); */
+    gap: 0.5rem;
+
 }
 .DButton::hover{
     top: 30px;
 }
 .Yellow{
-    background-color: rgb(175, 225, 39);
-    box-shadow: 0px 15px 45px -20px rgb(175, 225, 39);
+    background-color: rgb(184, 214, 87);
+    box-shadow: 0px 20px 45px -20px rgb(175, 225, 39);
 }
 .Blue{
     background-color: #0197F6;
-    box-shadow: 0px 15px 45px -20px #0197F6;
+    box-shadow: 0px 20px 45px -20px #0197F6;
 }
 .Green{
     background-color: #8CC084;
-    box-shadow: 0px 15px 45px -20px #8CC084;
+    box-shadow: 0px 20px 45px -20px #8CC084;
 }
 .Red{
     background-color: #ED474A;
-    box-shadow: 0px 15px 45px -20px #ED474A;
+    box-shadow: 0px 20px 45px -20px #ED474A;
+}
+.Black{
+    background-color: #11101f;
+    box-shadow: 0px 20px 45px -20px #7e7e7e;
 }
 .DButtonText{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }

@@ -5,7 +5,7 @@ function AboutMe(props:any) {
 
   return (
     <>
-      <div className='AboutMe' ref = {props.Propref}>
+      <div className='AboutMe' ref = {props.Propref} id = "section2"> 
         <div className="AboutHeader">
           <h1>About Me</h1>
           {/* <Anitext  text = "About Me" class = "header"/> */}

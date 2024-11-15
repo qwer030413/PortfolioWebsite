@@ -5,7 +5,6 @@ import './AnimationText.css';
 function Anitext(props: any){
     
     const sentance = props.text.split("");
-    console.log(sentance)
 
     return(
         
