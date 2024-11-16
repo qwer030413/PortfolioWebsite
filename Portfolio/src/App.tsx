@@ -5,11 +5,13 @@ import { useEffect, useRef, useState } from 'react'
 import Welcome from './Pages/Welcome/welcome'
 import Tabs from './components/Tab/Tabs'
 import Experiences from './Pages/Experiences/Experiences'
+import Skills from './Pages/Skills/SKills'
 function App() {
   const containerRef = useRef<HTMLDivElement| null>(null)
   const homeRef = useRef<HTMLDivElement| null>(null);
   const aboutMeRef = useRef<HTMLDivElement| null>(null);
   const ExperiencesRef = useRef<HTMLDivElement| null>(null);
+  const SkillRef = useRef<HTMLDivElement| null>(null);
   const [tabs, setTabs] = useState(1);
   function updateTabs(id: number, tab: any)
   {
@@ -25,14 +27,18 @@ function App() {
               const tab2Boundary = (container.querySelector('#section1') as HTMLElement)?.offsetTop || 0;
               const tab3Boundary = (container.querySelector('#section2') as HTMLElement)?.offsetTop || 0;
               const tab4Boundary = (container.querySelector('#section3') as HTMLElement)?.offsetTop || 0;
+              const tab5Boundary = (container.querySelector('#section4') as HTMLElement)?.offsetTop || 0;
               if (scrollY < tab2Boundary + 500) {
                 setTabs(1); 
               } 
               else if (scrollY < tab3Boundary + 500) {
                 setTabs(2); 
               }
-              else if (scrollY < tab4Boundary){
+              else if (scrollY < tab4Boundary + 500){
                 setTabs(3);
+              }
+              else if (scrollY < tab5Boundary){
+                setTabs(4);
               }
             }
         };
@@ -43,10 +49,11 @@ function App() {
     },[]);
   return (
         <div className='Home' ref = {containerRef}>
-          <Tabs homeRef = {homeRef} aboutMeRef = {aboutMeRef} ExperiencesRef = {ExperiencesRef} tabs = {tabs} updateTabs = {updateTabs}/>
+          <Tabs homeRef = {homeRef} aboutMeRef = {aboutMeRef} ExperiencesRef = {ExperiencesRef} SkillRef = {SkillRef} tabs = {tabs} updateTabs = {updateTabs}/>
           <Welcome homeRef = {homeRef}/>
           <AboutMe Propref = {aboutMeRef}/>
           <Experiences Propref = {ExperiencesRef}/>
+          <Skills Propref = {SkillRef} />
         </div>
       
         

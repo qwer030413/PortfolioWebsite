@@ -22,7 +22,8 @@ function Welcome(props:any) {
               <DefaultButton text = "LinkedIn" color = "Blue" icon = {<FaLinkedin size={22}/>} link = 'https://www.linkedin.com/in/seojin-park-332aaa213/'/>
               <DefaultButton text = "GitHub" color = "Black"  icon = {<FiGithub size={22}/>} link = 'https://github.com/qwer030413'/>
               <DefaultButton text = "Instagram" color = "Yellow" icon = {<FaInstagram size={22}/>} link = 'https://www.instagram.com/chrispark03_/'/>
-              <DefaultButton text = "Email" color = "Green" icon = {<MdEmail size={22}/>} link = 'comosjay@gmail.com'/>
+              <DefaultButton text = "Email" color = "Green" icon = {<MdEmail size={22}/>} link = "mailto:comosjay@gmail.com?subject=(Subject)&body=Hi%20Chris!" />
+
               <DefaultButton text = "Resume" color = "Red" icon = {<IoDocumentTextOutline size={22}/>} link = {Resume}/>
           </div>
         </div>

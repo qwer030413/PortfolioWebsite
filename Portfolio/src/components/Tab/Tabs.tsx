@@ -26,7 +26,8 @@ export default function Tabs(props:any): ReactElement{
         },
         {
             label:"Skills",
-            id: 4
+            id: 4,
+            tabRef: props.SkillRef
         },
         {
             label:"Projects",
